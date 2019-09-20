@@ -1,0 +1,407 @@
+@charset "utf-8";
+/* CSS Document */
+/*淘宝主要导航栏*/
+.taobao_nav{
+	position:relative;
+	top: 36px;
+	width:100%;
+	height: 30px;
+	background-image: linear-gradient(45deg,#FF9000,#FF5300);
+}
+/*淘宝主要导航栏内容部分*/
+.taobao_nav>div{
+	width:1190px;
+	height: 30px;
+	margin: 0px auto;
+}
+/*淘宝主要导航栏头部：主题市场*/
+.taobao_nav>div>div:nth-child(1){
+	float: left;
+	width:190px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	background-color: #FF5000;
+	text-align: center;
+	color: white;
+	font-weight: bolder;
+}
+/*淘宝主要导航栏多个ul的样式*/
+.taobao_nav>div>ul{
+	color: white;
+	float:left;
+	list-style: none;
+}
+/*淘宝主要导航栏多个ul的样式的分隔符号 | 样式*/
+.taobao_nav>div>ul>span{
+	font-size: 16px;
+	line-height: 30px;
+	padding-left: 22px;
+}
+/*淘宝主要导航栏子选项*/
+.taobao_nav>div>ul>li{
+	cursor: pointer;
+	margin-left: 16px;
+	font-size: 15px;
+	font-weight: bold;
+	float: left;
+	line-height: 35px;
+}
+#head_icon{
+	width: 22px;
+	height: 12px;
+	margin-top: -12px;
+	background-size: 22px 12px;
+	background: url(../images/head_icon.png) no-repeat;
+}
+/*淘宝第一个主要区域“位于导航栏下的轮播图与导航区域”*/
+.taobao_content{
+	position: relative;
+	top: 21px;
+	height: 633px;
+	width: 100%;
+}
+/*主要区域的正式内容*/
+.taobao_content>div{
+	margin: 0px auto;
+	width: 1190px;
+	background-color: aqua;
+}
+.taobao_content>div>div>div{
+	float:left;
+}
+/*下面是主要区域的各个div样式*/
+.taobao_content>div>div:nth-child(1){
+	float: left;
+	height: 633px;
+	width: 890px;
+}
+/*主题市场*/
+.taobao_content>div>div>div:nth-child(1){
+	padding-top: 5px;
+	width: 190px;
+	height: 518px;
+	background-color: white;
+	border: #FF5000 1px solid;
+}
+/*主要区域的右边*/
+.taobao_content>div>div>div:nth-child(1)>ul>li{
+	line-height: 32px;
+	padding-left: 25px;
+	list-style:none;
+	height: 32px;
+	width: 100%;
+	color: #666666;
+}
+/*主题市场的li*/
+.taobao_content>div>div>div:nth-child(1)>ul>li:hover{
+	cursor: pointer;
+	color: #FF5000;
+	background-color: #FFE4E5;
+}
+.taobao_content>div>div>div:nth-child(1)>ul>li>span{
+	opacity: 0.8;
+	float:right;
+	padding-right: 10px;
+}
+/*轮播图右边的图片div*/
+.taobao_content>div>div>div:nth-child(3){
+	width: 160px;
+	height: 280px;
+	background-color: black;
+	margin-top: 10px;
+}
+/*天猫轮播图右边的图片div*/
+.taobao_content>div>div>div:nth-child(5){
+	line-height: 18px;
+	height: 220px;
+	width: 160px;
+	font-size: 12px;
+	color: gray;
+}
+/*淘宝头条大div*/
+.taobao_content>div>div>div:nth-child(6){
+	position: relative;
+	margin-top: 10px;
+	height: 100px;
+	width: 890px;
+	background-color: white;
+}
+/*右侧栏大div（用户，公告，9宫格）*/
+.taobao_content>div>div:nth-child(2){
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	height: 623px;
+	width: 290px;
+	background-color:white;
+}
+/*右侧栏，用户区块*/
+.taobao_content>div>div:nth-child(2)>div:nth-child(1){
+	border: 0px;
+	width: 290px;
+	height: 146px;
+	background-image: url(../images/user_bg_img.jpg);
+	background-position:center;
+	background-size: 290px 146px;
+}
+/*用户头像*/
+.taobao_content_left>div>div:nth-child(1){
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-image: url(../images/head_photo.jpg);
+	background-position: center;
+	background-size: 50px 50px;
+	margin: 2px auto 3px;;
+}
+/*用户HI，你好字体*/
+.taobao_content_left>div>div:nth-child(2){
+	margin-bottom: 7px;
+	width: 100%;
+	height: 10px;
+	font-size: 10px;
+	text-align: center;
+}
+/*金币字体左边距*/
+.money_text{
+	margin-left: 41px;
+}
+/*网上有害信息举报*/
+.money_text>div{
+	margin-left: 4px;
+	line-height: 20px;
+	padding-right: 10px;
+	border-radius: 20px;
+	color: #FF5000;
+	font-size: 12px;
+	float: left;
+	background-color: #FFE4DB;
+}
+/*网上有害信息举报的span 》*/
+.money_text>div>span{
+	margin-top: 2px;
+	float: left;
+	display: inline-block;
+	width: 20px;
+	height: 16px;
+	overflow: hidden;
+	background-position:bottom;
+}
+/*淘金币*/
+.money_text>div>span:nth-child(1){
+	background: url(../images/money1.png) no-repeat;
+}
+.money_text>div:nth-child(2)>span:nth-child(1){
+	background:url(../images/money2.png) no-repeat;
+	opacity: 0.9;
+}
+.taobao_content_left>div>div:nth-child(4){
+	padding-left: 15px;
+	float: left;
+	height: 53px;
+	width: 290px;
+}
+/*用户三大按钮通用样式*/
+.taobao_content_left>div>div:nth-child(4)>button{
+	border: 0px;
+	color: white;
+	border-radius: 5px;
+	height: 25px;
+	font-weight: bolder;
+	margin-top: 10px;
+	padding-left: 7px;
+	margin-left: 3px;
+	background-image: linear-gradient(45deg,#FF5100,#FF6D05);
+}
+/*下面几个按钮的样式*/
+.taobao_content_left>div>div:nth-child(4)>button:nth-child(1){
+	width: 92px;
+}
+.taobao_content_left>div>div:nth-child(4)>button:nth-child(2){
+	width: 74px;
+}
+.taobao_content_left>div>div:nth-child(4)>button:nth-child(3){
+	width: 75px;
+}
+/*网上有害信息举报专区*/
+.taobao_content_left>div>div:nth-child(5){
+	float: left;
+	height: 25px;
+	width: 100%;
+	padding-left: 82px;
+	background-color: #FFE4DD;
+	font-size: 12px;
+	color: #FF4400;
+	line-height: 25px;
+	cursor: pointer;
+}
+/*举报专区箭头*/
+.taobao_content_left>div>div:nth-child(5)>span{
+	float: right;
+	margin-right: 53px;
+	line-height: 25px;
+}
+/*公告，标题..菜单栏的ul*/
+.taobao_content_left>div>div:nth-child(6)>ul{
+	margin-bottom: 8px;
+}
+/*公告，标题..菜单栏的子选项*/
+.taobao_content_left>div>div:nth-child(6)>ul>li{
+	font-size: 13px;
+	margin-left: 19px;
+	padding-top: 14px;
+	float: left;
+	width: 32px;
+	list-style: none;
+	text-align: center;
+	border-bottom: 2px solid #FFFFFF;
+}
+/*公告，标题..菜单栏的子选项被鼠标选择时*/
+.taobao_content_left>div>div:nth-child(6)>ul>li:hover{
+	border-bottom: 2px solid #FF5100;
+	font-weight: bold;
+	color: #FF5100;
+	cursor: pointer;
+}
+/*公告，规则..里文章标题的父div*/
+.taobao_content_left>div>div:nth-child(7){
+	padding-top: 8px;
+	float: left;
+	height: 72px;
+	font-size: 12px;
+}
+/*公告，规则..里文章标题通用样式*/
+.taobao_content_left>div>div:nth-child(7)>ul>li{
+	padding-left: 10px;
+	line-height: 28px;
+	float: left;
+/*新闻公告中标题为黄颜色*/
+}
+.taobao_content_left>div>div:nth-child(7)>ul>li>span{
+	color: #FF5100;
+}
+/*十二宫格的div*/
+.taobao_content_left>div>div:nth-child(8){
+	float: left;
+	background-image: url(../images/nine_grid.png);
+	height: 231px;
+	width: 290px;
+}
+/*十二宫格的li*/
+.taobao_content_left>div>div:nth-child(8)>ul>li{
+	list-style: none;
+	line-height:112px;
+	font-size: 12px;
+	text-align: center;
+	float: left;
+	height: 77px;
+	width: 25%;
+}
+/*九宫格被选中*/
+.nine_active{
+	border: 1px solid #FF5100;
+	border-bottom: 0px ;
+}
+/*十二宫格文字被选中变橘色*/
+.taobao_content_left>div>div:nth-child(8)>ul>li:hover{
+	color: #FF5100;
+	cursor: pointer;
+}
+/*阿里app区块*/
+.taobao_content_left>div>div:nth-child(9){
+	float: left;
+}
+/*阿里app*/
+.taobao_content_left>div>div:nth-child(9)>div{
+	padding-left: 20px;
+	width: 100%;
+	font-weight: bold;
+}
+/*阿里app“更多》”span标签*/
+.taobao_content_left>div>div:nth-child(9)>div>span{
+	float:right;
+	font-size: 12px;
+	font-weight: 200;
+	padding-right: 18px;
+}
+/*阿里app图片的li*/
+.taobao_content_left>div>div:nth-child(9)>ul>li{
+	float:left;
+	list-style: none;
+	margin-left: 22px;
+	margin-top: 8px;
+}
+/*阿里app图片*/
+.taobao_content_left>div>div:nth-child(9)>ul>li>img{
+	border-radius: 4px;
+	width: 32px;
+	height: 32px;
+}
+/*淘宝头条大div*/
+#toutiao{
+	padding-left: 20px;
+	width: 200px;
+	height: 100px;
+	float: left;
+	background: url(../images/toutiao.png) no-repeat;
+	background-size: 125px 27px;
+	background-position: 20px 22px;
+	font-size: 12px;
+	color: rgba(153,153,153,1);
+}
+/*淘宝头条文字div*/
+#toutiao>div{
+	height: 12px;
+	margin-top: 57px;
+}
+/*头条内容*/
+#toutiao_content{
+	position: relative;
+	margin-left: 200px;
+	width: 690px;
+	height: 100px;
+}
+#toutiao_content:hover{
+	cursor: pointer;
+	opacity:0.9;
+}
+/*头条里的图片*/
+#toutiao_content>img{
+	opacity: 0.9;
+	margin-right: 14px;
+	margin-top: 16px;
+	width: 130px;
+	height: 74px;
+	float: left;
+}
+/*头条内容标题*/
+#toutiao_title{
+	float: left;
+}
+#toutiao_title>h3{
+	font-size: 16px;
+}
+#toutiao_title>p{
+	font-size: 14px;
+	color:gray;
+}
+/*头条_更多>*/
+#toutiao_more{
+	font-size: 12px;
+	color: gray;
+	position: absolute;
+	right: 20px;
+	top: 8px;
+}
+#big_menu{
+	visibility: hidden;
+	z-index: 99;
+	left: 270px;
+	top: 15px;
+	width: 710px;
+	height: 520px;
+	position: absolute;
+	background-color: white;
+	border: 2px solid #FF5100;
+}

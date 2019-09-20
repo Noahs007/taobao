@@ -1,0 +1,257 @@
+
+<!-- saved from url=(0063)chrome-extension://lcmfgffmlbfpmofnndidnlpeganocmek/iframe.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<meta name="viewport" content="width=device-width,maximum-scale=1.0">
+<title>译库网页翻译插件</title>
+
+<style type="text/css">
+body,div,ul,li,p,a,span,b,strong,em,i,img {
+	margin: 0px;
+	padding: 0px;
+	font: 12px Microsoft Yahei, "宋体", Arial, Helvetica, sans-serif;
+}
+
+img {
+	border: 0px;
+}
+
+ul,li {
+	list-style: none;
+}
+
+a,a:hover {
+	text-decoration: none;
+}
+
+.clearfix:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfix {
+	zoom: 1
+}
+
+.w1000 {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.fl {
+	float: left;
+}
+
+.strans {
+	height: 50px;
+}
+
+.s_warp {
+	background: #0093d5;
+	width: 100%;
+	height: 50px;
+	color: #ffffff;
+	position: fixed;
+}
+
+.s_warp .w1000 {
+	position: relative;
+}
+
+.s_warp .logo {
+	position: absolute;
+	top: 13px;
+	left: 0px;
+}
+
+.s_warp .s_ltxt {
+	position: absolute;
+	top: 13px;
+	left: 29px;
+}
+
+.s_warp .s_ltxt a {
+	display: block;
+	line-height: 23px;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.s_warp .s_speed {
+	position: absolute;
+	top: 11px;
+	left: 200px;
+}
+
+.s_warp .s_speed span {
+	display: block;
+	line-height: 27px;
+	margin-right: 6px;
+}
+
+.s_warp .s_speed .ss_bar {
+	background: url(images/sbar0.png) repeat-x 0 center;
+	width: 345px;
+	height: 27px;
+}
+
+.s_warp .s_speed .ss_bar .ssb_been {
+	background: url(images/sbar1.png) repeat-x 0 center;
+	width: 45px;
+	height: 27px;
+	text-align: right;
+}
+
+.s_warp .s_lang {
+	position: absolute;
+	top: 14px;
+	left: 200px;
+}
+
+.s_lang .sl_source {
+	margin-right: 6px;
+}
+
+.s_warp .s_lang select {
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #ffffff;
+	border-radius: 6px;
+}
+
+.s_lang .sl_elang {
+	padding: 7px;
+	cursor: pointer;
+}
+
+.s_lang .sl_elang img {
+	float: left;
+}
+
+.s_lang .sl_btn {
+	padding: 0px 6px;
+}
+
+.s_lang .sl_btn button {
+	background: #ffffff;
+	height: 22px;
+	line-height: 22px;
+	padding: 0px 10px;
+	border: 0px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.s_speed .sl_btn button {
+	background: #ffffff;
+	height: 22px;
+	line-height: 22px;
+	padding: 0px 10px;
+	border: 0px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.s_warp .s_link {
+	position: absolute;
+	top: 15px;
+	right: 0px;
+}
+
+.s_warp .s_link a {
+	display: inline-block;
+	height: 22px;
+	line-height: 22px;
+	margin-left: 6px;
+	color: #ffffff;
+}
+.sl_duba{
+	padding:0 30px;
+	background: url("images/duba.png") no-repeat 0 center;
+}
+.s_link .closePlu{
+	width:12px;
+	height:12px;
+	position:absolute;
+	right:30px;
+	top:5px;
+	background: url("images/close_1.png") no-repeat;
+}
+.s_link .closePlu:hover{
+	background: url("images/close_2.png") no-repeat;
+}
+
+.s_close{position:absolute;top:0;right:0;}
+.s_close a{display:block;background: url("images/close.png") no-repeat right 0;width:18px;height:18px;cursor:pointer;}
+
+.stransfixed{position:fixed;right:0px;top:200px;z-index:9999999;}
+.stransfixed a{display:block;background:#0093d5 url(images/logofix31.png) no-repeat 11px center;width:54px;height:54px;border-radius:27px;margin-right:16px;}
+.stransfixed a span{display:none;padding:22px 10px 0px 58px;font-size:14px;color:#ffffff;}
+.stransfixed a:hover{background-position:20px center;border-radius:27px 0 0 27px;width:auto;margin-right:0px;}
+.stransfixed a:hover span{display:block;}
+</style>
+
+<script type="text/javascript" src="chrome-extension://lcmfgffmlbfpmofnndidnlpeganocmek/jquery.min.js"></script>
+
+</head>
+
+<body>
+<div class="stransfixed"><a href="javascript:;"><span>译库网页翻译</span></a></div>
+	<div class="strans">
+		<div class="s_warp">
+			<div class="w1000">
+				<div class="logo">
+					<a target="_blank" href="http://web.yeekit.com/"><img src="chrome-extension://lcmfgffmlbfpmofnndidnlpeganocmek/images/logoh24.png"></a>
+				</div>
+				<div class="s_ltxt">
+					<a target="_blank" href="http://web.yeekit.com/">译库网页翻译</a>
+				</div>
+				<div id="msgContent" class="s_lang clearfix">
+					<!-- 源语言 -->
+					<div class="fl sl_source">
+						<span id="sour_spn">当前浏览的是</span>
+						<select id="sourceLang">
+						    <option value="en">英文</option>
+							<option value="zh">中文</option>
+							<option value="ru">俄语</option>
+							<option value="pt">葡语</option>
+							<option value="fr">法语</option>
+						</select>
+					</div>
+					<!-- 目标语言 -->
+					<div class="fl sl_target">
+						<span id="tar_spn">网页，是否翻译为</span>
+						<select id="targetLang">
+							<option value="zh">中文</option>
+							<option value="en">英文</option>
+							<option value="ru">俄语</option>
+							<option value="pt">葡语</option>
+							<option value="fr">法语</option>
+						</select>
+						<span id="is_trans">?</span>
+					</div>
+					<div id="trans_div" class="fl sl_btn"><button id="trans_btn">翻译</button></div>
+					<div class="fl sl_btn" id="show_button"><button id="block_non">不再提示</button></div>
+					<div class="fl sl_btn" id="op_select_word">
+					
+					</div>
+				</div>
+				
+				<div class="s_link">
+					<!-- <a class="sl_duba" target="_blank" href="http://www.duba.com">金山毒霸</a> -->
+					<a target="_blank" href="http://web.yeekit.com/feedback.php">意见反馈</a>
+					<a id="rgTrans" target="_blank" href="http://www.yeecloud.com/">人工翻译</a>
+				<a id="about" style="cursor: pointer;">关于我们</a></div>
+			</div>
+			<div class="s_close">
+				<a id="closePlu" class="closePlu"></a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="chrome-extension://lcmfgffmlbfpmofnndidnlpeganocmek/Bind_Event.js" charset="utf-8"></script>
+
+
+</body></html>

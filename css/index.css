@@ -1,0 +1,181 @@
+/*轮播图div*/
+#slide_div{
+	position: relative;
+	width: 520px;
+	height: 280px;
+	margin: 10px;
+	float: left;
+	overflow: hidden;
+}
+#slide_div>ul{
+	position: absolute;
+	width:2600px;
+}
+#slide_div>ul>li{
+	float:left;
+	width: 520px;
+	height: 280px;
+}
+#slide_span{
+	border-radius: 10px;
+	position: absolute;
+	top: 254px;
+	left: 225px;
+	width:70px;
+	height: 12px;
+	background-color: rgba(255,255,255,0.5);
+}
+#slide_span>span{
+	cursor: pointer;
+	margin-left: 5px;
+	display: inline-block;
+	float: left;
+	height: 8px;
+	width: 8px;
+	margin-top: 2px;
+	line-height: 12px;
+	border-radius: 50%;
+	background-color: white;
+}
+.slide_left,.slide_right{
+	color: white;
+	position: absolute;
+	top:125px;
+	height: 30px;
+	line-height: 30px;
+	width: 20px;
+	background-color:black;
+	opacity: 0.5;
+}
+.slide_left{
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	left:0px;
+}
+.slide_right{
+	text-align: right;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+	right: 0px;
+}
+.slide_active{
+	background-color: rgba(255,80,0,1) !important;
+}
+
+
+
+/*天猫轮播图div_标题（天猫图标）*/
+#tianmao_title{
+	width:100%;
+	height: 20px;
+	background-image:url(../images/tianmao.png);
+	background-repeat: no-repeat;
+	position: relative;
+}
+/*理想生活上天猫*/
+#tianmao_title>span:nth-child(1){
+	margin-left: 134px;
+	font-size: 12px;
+}
+/*轮播图位置*/
+#tianmao_title>span:nth-child(2){
+	position: absolute;
+	right: 2px;
+}
+/*天猫轮播图li切换box底色*/
+#tianmao_box{
+	width: 100%;
+	height: 3px;
+	background-color: rgba(255,22,72,1);
+}
+/*天猫轮播图li被选中li样式*/
+.tianmao_active{
+	background-color: black !important;
+}
+/*天猫轮播图切换box*/
+#tianmao_box>span{
+	display: inline-block;
+	float: left;
+	width: 16.6%;
+	height: 3px;
+	cursor: pointer;
+}
+/*天猫轮播图div*/
+#tianmao_slide{
+	position: relative;
+	height: 220px;
+	width: 520px;
+	margin: 0px 10px;
+	overflow: hidden;
+}
+/*天猫轮播图超出的ul*/
+#tianmao_slide>ul{
+	position: relative;
+	margin: 0px;
+	width: 3120px;
+	height: 220px;
+}
+/*天猫轮播图li通用样式*/
+#tianmao_slide>ul>li{
+	list-style: none;
+	width:520px;
+	height: 220px;
+	float: left;
+}
+/*天猫轮播图li第5第6给通用样式*/
+#tianmao_slide>ul>li:nth-child(5),
+#tianmao_slide>ul>li:nth-child(6){
+	background-color: white;
+}
+/*天猫轮播向通用按钮样式*/
+#tianmao_pre,#tianmao_next{
+	color: white;
+	position: absolute;
+	height: 30px;
+	line-height: 30px;
+	width: 20px;
+	background-color:black;
+	opacity: 0.5;
+	top: 95px;
+}
+/*天猫轮播向不通用按钮样式*/
+#tianmao_pre{
+	left: 0px;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#tianmao_next{
+	text-align: right;
+	right: 0px;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+}
+/*天猫轮播第一个li*/
+#tm_ul_one>li{
+	border: rgba(235,235,235,0.8) solid 1px;
+	list-style: none;
+	float: left;
+	width:130px;
+	height:66px;
+	background-color: white;
+}
+/*天猫轮播图第一个li的图片布局*/
+#tm_ul_one>li>img{
+	width: 90px;
+	height: 45px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+/*天猫轮播人第四个li布局*/
+#tm_ul>li:nth-child(3)>img,#tm_ul>li:nth-child(4)>img{
+	width: 129px;
+	margin-left: 1px;
+	background-color: white;
+	float: left;
+}
+/*天猫轮播图最后两个li的图片布局*/
+#tm_ul>li:nth-child(5)>img,
+#tm_ul>li:nth-child(6)>img{
+	margin-left: 13px;
+	margin-top: 8px;
+}

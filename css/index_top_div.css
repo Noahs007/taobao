@@ -1,0 +1,358 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	list-style: none;
+}
+ul,li{
+	padding: 0px;
+	margin: 0px;
+}
+/*最顶部的div*/
+#best_top_div{
+	position: absolute;
+	z-index: 99;
+	width:100%;
+	height: 36px;
+	background-color:#F6F4F6;
+}
+#best_top_div>div{
+	margin: 0 auto;
+	width: 1200px;
+	height: 36px;
+}
+/*最顶部div的左右侧*/
+#best_top_div>div>.left{
+	text-align: center;
+	width: 600px;
+	float: left;
+	list-style: none;
+}
+#best_top_div>div>.right{
+	text-align: center;
+	width: 600px;
+	float:left;
+	list-style: none;
+}
+/*最顶部div的子选项样式*/
+#best_top_div>div>ul>li{
+	width: 85px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 13px;
+	float: left;
+}
+/*最顶部div选择城市*/
+.city{
+	visibility: hidden;
+	border: 1px solid #F4F4F4;
+	border-top: 0px;
+	background-color: white;
+	width: 250px;
+	height: 285px;
+	overflow:auto;
+}
+.city>li{
+	text-align: left;
+	font-size: 12px;
+	padding-left: 8px;
+	line-height: 28px;
+	height: 28px;
+}
+/*设置城市被选择样式*/
+.city>li:hover{
+	cursor:pointer;
+	background-color:#F6F4F6;
+}
+.bg-white:hover{
+	cursor:default;
+	background-color: white;
+}
+.left>.bg-white:hover .city{
+	visibility:visible;
+}
+/*下面设置最顶部div中，右侧子div的样式*/
+.customer,.seller,.favorite,.mytaobao{
+	background-color: white;
+	color: gray;
+	border: 1px solid #F4F4F4;
+	visibility: hidden;/*本来不可见*/
+	border-top: 0px;
+	list-style: none;
+	text-align: left;
+}
+/*聚焦选中可见*/
+.bg-white:nth-child(1):hover .mytaobao{
+	visibility: visible;
+}
+.bg-white:nth-child(3):hover .favorite{
+	visibility: visible;
+}
+.bg-white:nth-child(5):hover .seller{
+	visibility: visible;
+}
+.bg-white:nth-child(6):hover .customer{
+	visibility: visible;
+}
+/*设置最顶部子菜单被选择样式*/
+.right>li>ul>li:hover{
+	background-color: #F6F4F6;
+}
+.bg-white:nth-child(7):hover .navigation{
+	visibility: visible;
+}
+/*最顶部导航栏的导航选项*/
+.navigation{
+	background-color: white;
+	margin-left: -1114px;
+	width: 1200px;
+	height: 310px;
+	visibility: hidden;
+	border: 1px solid #F4F4F4;
+}
+/*每个子导航栏的标题*/
+.navigation_title{
+	font-weight: bolder;
+	text-align: left;
+	font-size: 16px;
+	display: inline-block;
+	width: 300px;
+}
+/*导航子导航通用样式*/
+.navigation>ul{
+	border-right: 1px solid #EEEEEE;
+	padding-left: 16px;
+	width: 299px;
+	height: 310px;
+	float: left;
+}
+.navigation>ul>li{
+	text-align: left;
+	list-style: none;
+	float: left;
+}
+/*导航子导航差异样式*/
+.navigation>ul:nth-child(1)>li{
+	width: 70px;
+	height: 28px;
+}
+.navigation>ul:nth-child(2)>li{
+	width: 90px;
+	height: 28px;
+}
+.navigation>ul:nth-child(3)>li{
+	width: 90px;
+	height: 28px;
+}
+.navigation>ul:nth-child(4)>li{
+	width: 140px;
+	height: 28px;
+}
+/*a最顶部导航栏标记通用样式*/
+.navigation>ul:nth-child(1)>li>a,
+.navigation>ul:nth-child(2)>li>a,
+.navigation>ul:nth-child(3)>li>a,
+.navigation>ul:nth-child(4)>li>a{
+	color:#262525;
+	height: 25px;
+	line-height: 25px;
+	padding: 0px 6px;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 3px;
+}
+/*a最顶部导航栏标记差异样式*/
+.navigation>ul:nth-child(1)>li>a:hover{
+	background-color:#FF5500;
+	color:white;
+}
+.navigation>ul:nth-child(2)>li>a:hover{
+	background-color:#A0B959;
+	color:white;
+}
+.navigation>ul:nth-child(3)>li>a:hover{
+	background-color:#DF61AB;
+	color:white;
+}
+.navigation>ul:nth-child(4)>li>a:hover{
+	background-color:#52A0E5;
+	color:white;
+}
+/*小型跳动图标位置与动画设置*/
+.top_icon{
+	animation:low_up 2s infinite;
+	position: relative;
+	left: -3px;
+	top: -10px;
+}
+@keyframes low_up
+{
+10%{top: -10px;}
+20%{top: -8px;}
+90%{top:-8px;}
+100%{top:-10px;}
+}
+/*logo，搜索框，二维码构成的顶部div*/
+.top_div_f{
+	position: relative;
+	top: 36px;
+	width:100%;
+	background-color: white;
+	height: 120px;
+}
+.top_div{
+	width: 1190px;
+	height: 120px;
+	margin: 0px auto;
+}
+.top_div>div{
+	float: left;
+}
+/*logo位置*/
+.logo{
+	padding-left: 13px;
+	padding-top: 18px;
+	width: 250px;
+	height: 120px;
+}
+/*搜索框样式*/
+.search{
+	width: 630px;
+	height: 120px;
+}
+.search>div{
+	height:40px;
+}
+.search>div:nth-child(2){
+	border-radius: 30px;
+	overflow: hidden;
+	border: 2px solid  #FF5000;
+}
+/*搜索框输入框样式*/
+.search>div>input[type*="text"]{
+	outline: none;
+	float: left;
+	width: 474px;
+	height: 36px;
+	border: 0px;
+}
+/*搜索框的放大镜图标*/
+.search>div>span{
+	margin-top: -1px;
+	float: left;
+	line-height: 36px;
+	text-align: center;
+	overflow: hidden;
+	color: gray;
+	font-size: 20px;
+	display: inline-block;
+	height: 38px;
+	width: 38px;
+}
+/*搜索框的照相机图标*/
+.search>div>span:nth-child(1){
+	font-size: 16px;
+	line-height: 40px;
+	opacity: 0.8;
+}
+/*搜索框的按钮*/
+.search>div>button{
+	outline: none;
+	float: left;
+	color: white;
+	font-size: 18px;
+	border: 0px;
+	width: 76px;
+	height: 40px;
+	line-height: 34px;
+	background-image: linear-gradient(45deg,#FF9000,#FF5A00);
+}
+/*搜索框导航栏*/
+.search>ul{
+	padding-top: 13px;
+	margin: 0px;
+	padding-left: 18px;
+	float: left;
+	width:630px;
+}
+.search>ul>li{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	float: left;
+	padding-right: 16px;
+	list-style: none;
+	text-align: center;
+	padding:1px 3px;
+}
+.search>ul>li>a{
+	padding: 2px 4px;
+	font-size: 12px;
+	color: #FF4400;
+	display: inline-block;
+}
+.search>ul>li>a:hover{
+	background-color: #FFEEE5;
+}
+.search>ul>.active{
+	background-image: linear-gradient(45deg,#FF9000,#FF5A00);
+}
+.search>ul>.active>a{
+	text-decoration: none;
+	font-weight: bolder;
+	color: white;
+}
+.search-select{
+	position: relative;
+	top: -14px;
+	left: -20px;
+	height: 28px;
+}
+.search-select>li{
+	line-height: 28px;
+	text-align: left;
+	font-size: 12px;
+	float: left;
+	cursor:pointer;
+}
+.search-select>li:hover{
+	color:#FF5000;
+}
+.search-select>li>span{
+	color:#FF5000;
+}
+/*手机淘宝二维码*/
+.sjtb{
+	position: relative;
+	top: 15px;
+	left: 100px;
+	width: 93px;
+	height: 90px;
+}
+.sjtb>div:nth-child(1){
+	color:#EEEEEE;
+	font-size: 12px;
+	border: 1px solid #EEEEEE;
+	border-right: 0px;
+	float: left;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+}
+.sjtb>div:nth-child(2){
+	border: 1px solid #EEEEEE;
+	float: left;
+	width: 78px;
+	height: 90px;
+}
+.sjtb>div:nth-child(2)>span{
+	font-size: 12px;
+	display: inline-block;
+	color: #FF5000;
+	width: 75px;
+	text-align: center;
+}
+/*二维码图片*/
+.sjtb>div:nth-child(2)>img{
+	margin: 0px 7px 7px 7px;
+	width: 63px;
+	height: 63px;
+}
