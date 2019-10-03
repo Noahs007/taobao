@@ -6,6 +6,6 @@
  ![image](https://github.com/norkmGitHub/taobao/blob/master/images/shuomin.jpg)
  
  
- - 欢迎访问我的网站 htts://www.norkm.com
+ - 欢迎访问我的网站 https://www.norkm.com
  - 邮箱 norkm@qq.com
  - 有hr看中也可以联系我的，哈哈`
